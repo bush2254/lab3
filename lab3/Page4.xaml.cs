@@ -29,14 +29,17 @@ namespace lab3
         {
             double x = double.Parse(AA.Text);
             double p = 3.14;
+            double y=0;
 
             if (x < p / 2 && x > -p / 2)
             {
-                double y = Sqrt(Abs((Sin(x) + Pow(Tan(x), 2)) / (3.5 * Cos(x))));
+                y = Sqrt(Abs((Sin(x) + Pow(Tan(x), 2)) / (3.5 * Cos(x))));
+                   MessageBox.Show($" y={y}", "ответ");
             }
             else if (x > p / 2 && x < p)
             {
-                double y = Cos(x / 3) / (Sin(x) + Pow(Tan(x), 2));
+                y = Cos(x / 3) / (Sin(x) + Pow(Tan(x), 2));
+                MessageBox.Show($" y={y}", "ответ");
             }
             else
             {
