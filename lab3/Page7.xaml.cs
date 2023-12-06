@@ -34,7 +34,7 @@ namespace lab3
             {
                 ch = "четное";
             }
-            else if (x % 2 == 1)
+            else 
             {
                 ch = "нечетное";
             }
